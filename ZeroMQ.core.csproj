@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>Off</GenerateAssemblyInfo>
+    <Platforms>x64</Platforms>
+	<PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>ZeroMQ</AssemblyName>	
+  </PropertyGroup>
+
+ <ItemGroup>
+    <Compile Remove="ZeroMQTest\**" />
+    <EmbeddedResource Remove="ZeroMQTest\**" />
+    <None Remove="ZeroMQTest\**" />
+  </ItemGroup>
+</Project>
